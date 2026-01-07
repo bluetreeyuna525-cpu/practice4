@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Monda:wght@400..700&family=Noto+Sans+JP:wght@100..900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    color: #212121;
+    font-size: 12px;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    color: #212121;
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+nav p{
+    font-family: 'Inria Sans', serif;
+    font-size: 24px;
+    font-weight: 800;
+    flex: 3;
+    margin-left: 4%;
+}
+.nav-links{
+    list-style: none;
+    flex: 7;
+    text-align: right;
+    margin-right: 2%;
+}
+.nav-links li{
+    display: inline;    
+}
+
+.nav-links li a{
+    font-family: 'BIZ UDPGothic', serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: #212121;
+    margin: 1em;
+}
+.nav-links li a:hover{
+    color: #737373;
+}
+.nav-links li a:active{
+    color: #a1a1a1;
+}
+
+.section-1{
+    width: 100%;
+    height: 60vh;
+}
+.section-1 div{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    font-size: 20px;
+}
+
+/* Ｓｔａｆｆ */
+.staff, .member{
+    width: 70%;
+    height: 500px;
+    margin: 100px auto ;
+    font-family: 'Inria Sans', sans-serif;
+}
+.staff-wrapper{
+    width: 93%;
+    height: 450px;
+    margin: 30px auto ;
+    display: flex;
+    justify-content: space-between;
+}
+/* 左側 */
+.staff-left{
+    flex-basis: 42%;
+    display: flex;
+    flex-direction: column;
+}
+
+.staff-img{
+    width: 100%;
+    height: 80%;
+}
+.staff-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.staff-contact{
+    text-align: left;
+    padding-left: 5%;
+}
+.access-title{
+    font-family: 'Unbounded', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 7%;
+}
+.access-num{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    margin-top: 2%;
+    line-height: 20px;
+}
+#caution{
+    font-size: 10px;
+}
+/* 右側 */
+.staff-right{
+    flex-basis: 54%;
+    display: flex;
+    flex-direction: column;
+
+}
+.staff-name{
+    display: flex;
+    align-items: baseline;
+    justify-content: left;
+    width: 70%;
+    letter-spacing: 3px;
+}
+.staff-name h3{
+    margin-left: 10%;
+}
+.staff-position{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 450;
+    margin-top: 3%;
+}
+.staff-content{
+    height: 70%;
+    margin-top: 5%;
+}
+.staff-content2{
+    display: none;
+}
+.staff-content p{
+    margin-top: 3%;
+    line-height: 20px;
+}
+.staff-link{
+    display: flex;
+    justify-content: left;
+    
+}
+.staff-link button{
+    border: 1px solid #333 ;
+    background: none;
+    border-radius: 30px;
+    width: 140px;
+    height: 40px;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5%;
+}
+.staff-link button i{
+    margin-left: 3%;
+}
+.staff-link a{
+    text-decoration: none;
+    color: #212121;
+    margin-right: 5%;
+}
+.ni span{
+    font-size: 11px;
+}
+
+.staff-link button:hover{
+    background: #333;
+    color: #ffffff;
+    transition: .25s ease;
+    cursor: pointer;
+}
+.member{
+    margin-top: 200px;
+}
+.member h3{
+    margin: 30px auto;
+}
+
+
+
+footer{
+    width: 100%;
+    height: 8vh;
+    background: #8b9996;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+}

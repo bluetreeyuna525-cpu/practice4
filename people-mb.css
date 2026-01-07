@@ -1,0 +1,76 @@
+@media (max-width: 430px){
+    /* ナビゲーション */
+
+    nav{
+        width: 100vw;
+        height: 10vh;
+    }
+    nav p{
+        font-size: 12px;
+        margin-left: 4%;
+        width: 10%;
+        flex: none;
+    }
+
+    .nav-links{
+        width: 100%;
+        flex: none;
+        text-align: center;
+    }
+
+    .nav-links li a{
+        font-size: 10px;
+        margin: 0.5em;
+    }
+    .section-1{
+        height: 20vh;
+        width: 100%;
+    }
+    .section-1 div{
+        position: absolute;
+        top: 15%;
+        left: 10%;
+    }
+
+    .staff, .member{
+        width: 90%;
+        height: auto;
+        margin: 100px auto;
+    }
+    .staff-wrapper{
+        flex-direction: column;
+        height: auto;
+    }
+    .staff-img{
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .staff-contact{
+        display: none;
+    }
+    .staff-name, .staff-position{
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    .staff-content{
+        display: none;
+    }
+    .staff-content2{
+        display: block;
+        margin-top: 20px;
+    }
+    .staff-content2 p{
+    margin-top: 3%;
+    line-height: 20px;
+    }
+    .staff-link{
+        justify-content: center;
+    }
+    .staff-link button{
+        margin-top: 10%;
+    }
+
+}

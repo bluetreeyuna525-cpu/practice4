@@ -1,0 +1,55 @@
+@media (max-width: 430px){
+    /* ナビゲーション */
+
+    nav{
+        width: 100vw;
+        height: 10vh;
+    }
+    nav p{
+        font-size: 12px;
+        margin-left: 4%;
+        width: 10%;
+        flex: none;
+    }
+
+    .nav-links{
+        width: 100%;
+        flex: none;
+        text-align: center;
+    }
+
+    .nav-links li a{
+        font-size: 10px;
+        margin: 0.5em;
+    }
+    .section-1{
+        height: 20vh;
+        width: 100%;
+    }
+    .section-1 div{
+        position: absolute;
+        top: 15%;
+        left: 10%;
+    }
+
+
+
+    .section-2{
+        width: 90%;
+        height: auto;
+        margin: 40px auto;
+    }
+    .news-wrapper{
+        flex-direction: column;
+
+    }
+    .news-content{
+        width: 80%;
+        height: 40vh;
+        margin: 2px auto 20px auto;
+    }
+    .sentence{
+        font-size: 14px;
+        font-weight: 550;
+    }
+}

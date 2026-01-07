@@ -1,0 +1,126 @@
+@media (max-width: 430px){
+    /* ナビゲーション */
+
+    nav{
+        width: 100vw;
+        height: 10vh;
+    }
+    nav p{
+        font-size: 12px;
+        margin-left: 4%;
+        width: 10%;
+        flex: none;
+    }
+
+    .nav-links{
+        width: 100%;
+        flex: none;
+        text-align: center;
+    }
+
+    .nav-links li a{
+        font-size: 10px;
+        margin: 0.5em;
+    }
+    .section-1{
+        height: 70vh;
+    }
+    .content{
+        padding: 4% 4%;
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+    }
+    .content h1{
+        font-size: 30px;
+        line-height: 1.2;
+    }
+    .slider-inner1{
+        margin-top: 5vh;
+    }
+
+    .slider-inner1,
+    .slider-inner2,
+    .slider-inner3{
+        height: 20%;
+    }
+    #heading1 span,
+    #heading2 span{
+        font-size: 28px;
+
+    }
+    .section-3{
+        width: 90%;
+        height: auto;
+    }
+    .news-wrapper{
+        flex-wrap: wrap;
+    }
+    .news-content{
+        width: 47%;
+        height: 230px;
+        margin-top: 3%;
+    }
+    .sentence{
+        margin-top: 3%;
+
+    }
+    .news-button{
+        width: 30%;
+        margin: 30px auto;
+    }
+
+    .section-4{
+        width: 80%;
+        height: auto;
+    }
+    .access-content{
+        flex-direction: column;
+
+    }
+    .access-info{
+        text-align: center;
+    }
+    .map{
+        display: block;
+        margin: 1rem auto;
+        width: 100%;
+
+        height: auto;
+    }
+
+
+
+
+/* hamburger menu */
+    /* .humburger{
+        display: block;
+        margin-left: auto;
+        margin-right: 2%;
+        position: fixed;
+        right: 1rem;
+        top: 1rem;
+        z-index: 4;
+        padding: .5rem 1rem;
+        border: 1px solid var(--brown);
+        border-radius: 50%;
+        height: 4rem;
+        width: 4rem;
+        transition: .4s;
+    }
+    .nav-links{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background: #fff;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        padding-top: 0rem;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        transition: transform .5s ease-in;
+        z-index: 3;
+    } */
+}
