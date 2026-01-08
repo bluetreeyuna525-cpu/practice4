@@ -105,6 +105,7 @@ footer{
     nav{
         width: 100vw;
         height: 10vh;
+        padding-right: 13px;
     }
     nav p{
         font-size: 12px;
