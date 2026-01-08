@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News | Kondo lab</title>
     <link rel="stylesheet" href="news.css">
-    <link rel="stylesheet" href="news-mb.css".css">
+    <link rel="stylesheet" href="news-mb.css">
+    <script src="news.js" defer></script>
 
 </head>
 <body>
@@ -24,7 +25,7 @@
     
     <main>
         <section class="section-1">
-            <div>
+            <div class="fadein">
                 <h1>NEWS</h1>
             </div>
         </section>
@@ -32,17 +33,19 @@
         <section class="section-2">
 
             <div class="news-wrapper">
-                <div class="news-content">
-                    <img src="https://images.pexels.com/photos/19123083/pexels-photo-19123083.jpeg" alt="">
-                    <p class="date">2026. 01. 22</p>
-                    <p class="sentence">ホームページを開設しました</p>
+                <div class="news-content fadein">
+                    <a href="news-content.html">
+                        <img src="https://images.pexels.com/photos/19123083/pexels-photo-19123083.jpeg" alt="">
+                        <p class="date">2026. 01. 22</p>
+                        <p class="sentence">ホームページを開設しました</p>
+                    </a>
                 </div>
-                <div class="news-content">
+                <div class="news-content fadein">
                     <img src="https://images.pexels.com/photos/14267285/pexels-photo-14267285.jpeg" alt="">
                     <p class="date">2026. 01. 22</p>
                     <p class="sentence">ホームページを開設しました</p>
                 </div>
-                <div class="news-content">
+                <div class="news-content fadein">
                     <img src="https://images.pexels.com/photos/30221614/pexels-photo-30221614.jpeg" alt="">
                     <p class="date">2026. 01. 22</p>
                     <p class="sentence">ホームページを開設しました</p>
@@ -59,5 +62,4 @@
 
     
 </body>
-
 </html>

@@ -4,6 +4,7 @@
     nav{
         width: 100vw;
         height: 10vh;
+        padding-right: 13px;
     }
     nav p{
         font-size: 12px;
@@ -30,6 +31,7 @@
         position: absolute;
         top: 15%;
         left: 10%;
+        font-family: 'Noto Sans JP', sans-serif;
     }
 
     .staff, .member{
@@ -72,5 +74,10 @@
     .staff-link button{
         margin-top: 10%;
     }
+    .staff-link button:active{
+    background: #333;
+    color: #ffffff;
+    transition: .25s ease;
+}
 
 }

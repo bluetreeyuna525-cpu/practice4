@@ -5,7 +5,10 @@
     margin: 0;
     padding: 0;
 }
+.fadein{
+    opacity: 0;
 
+}
 main{
     color: #212121;
     font-size: 12px;
@@ -126,7 +129,7 @@ nav p{
     font-weight: 800;
     font-size: 24px;
     z-index: 3;
-    color: rgb(224, 223, 223);
+    color: rgb(238, 237, 237);
     text-shadow: #212121 2px 2px 4px;
     letter-spacing: 0.2em;
     background-size: 200% 100%;
@@ -191,6 +194,9 @@ nav p{
     height: 50vh;
     background: #eee;
 }
+.news-content a{
+    text-decoration: none;
+}
 .news-content:hover{
     cursor: pointer;
     opacity: .6;
@@ -213,6 +219,7 @@ nav p{
 .sentence{
     font-family: 'Noto Sans JP', serif;
     margin-top: 5%;
+    color: #212121;
 }
 .news-button{
     font-family: 'Carrois Gothic', sans-serif;  

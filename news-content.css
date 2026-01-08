@@ -59,53 +59,37 @@ nav p{
 }
 
 .section-2{
-    width: 80%;
+    width: 60%;
     height: 500px;
     margin: 50px auto 160px auto;
     text-align: center;
     justify-content: space-around; 
+    background: #f1f1f1;
+    padding: 40px;
+    border-radius: 10px;
 }
 
-.news-wrapper{
-    display: flex;
-    margin: 50px auto;
-    text-align: center;
-    justify-content: space-around; 
-}
-.news-content{
-    width: 25%;
-    height: 50vh;
-    background: #eee;
-}
-.news-content a{
-    text-decoration: none;
-}
-
-.news-content:hover{
-    cursor: pointer;
-    opacity: .6;
-    transition: opacity .3s ease;
-}
-.news-content img{
-    width: 100%;
-    height: 70%;
-    object-fit: cover;
-}
 .date{
     font-family: 'Monda', serif;
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 700;
+    color: #737373;
+    margin-bottom: 20px;
     text-align: left;
-    width: 80%;
-    margin: 3% auto;
-    color: #b5b5b5;
 }
-.sentence{
+.title{
     font-family: 'Noto Sans JP', serif;
-    margin-top: 5%;
-    color: #212121;
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: left;
 }
-
+.content{
+    font-family: 'Noto Sans JP', serif;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: left;
+}
 footer{
     width: 100%;
     height: 8vh;
@@ -116,4 +100,49 @@ footer{
     color: #ffffff;
     font-family: 'Inter', sans-serif;
     font-size: 11px;
+}
+@media (max-width: 430px){
+    nav{
+        width: 100vw;
+        height: 10vh;
+    }
+    nav p{
+        font-size: 12px;
+        margin-left: 4%;
+        width: 10%;
+        flex: none;
+    }
+
+    .nav-links{
+        width: 100%;
+        flex: none;
+        text-align: center;
+    }
+
+    .nav-links li a{
+        font-size: 10px;
+        margin: 0.5em;
+    }
+    .section-1{
+        height: 20vh;
+        width: 100%;
+    }
+    .section-1 div{
+        position: absolute;
+        top: 15%;
+        left: 10%;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    .section-2{
+        width: 90%;
+        height: 50vh;
+        margin: 100px auto 100px auto;
+        padding: 20px;
+    }
+    .date{
+        font-size: 16px;
+    }
+    .title{
+        font-size: 18px;
+    }
 }
