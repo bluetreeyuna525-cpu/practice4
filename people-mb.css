@@ -73,6 +73,7 @@
     }
     .staff-link button{
         margin-top: 10%;
+        color: #ffffff;
     }
     .staff-link button:active{
     background: #333;
