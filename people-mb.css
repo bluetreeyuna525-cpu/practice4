@@ -73,12 +73,13 @@
     }
     .staff-link button{
         margin-top: 10%;
-        color: #ffffff;
+        color: #212121;
     }
     .staff-link button:active{
     background: #333;
     color: #ffffff;
     transition: .25s ease;
 }
+
 
 }
