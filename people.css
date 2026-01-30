@@ -92,6 +92,15 @@ nav p{
 .staff-contact{
     text-align: left;
     padding-left: 5%;
+    display: flex;
+}
+.facebook{
+    margin-left: 10%;
+    margin-top: 20%;
+}
+.facebook img{
+    width:24px;
+    height:24px;
 }
 .access-title{
     font-family: 'Unbounded', sans-serif;
@@ -101,7 +110,7 @@ nav p{
 }
 .access-num{
     font-family: 'Inter', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 2%;
     line-height: 20px;
 }
@@ -119,7 +128,7 @@ nav p{
     display: flex;
     align-items: baseline;
     justify-content: left;
-    width: 70%;
+    width: 80%;
     letter-spacing: 3px;
 }
 .staff-name h3{
@@ -141,6 +150,7 @@ nav p{
 .staff-content p{
     margin-top: 3%;
     line-height: 20px;
+    font-size: 13px;
 }
 .staff-link{
     display: flex;
@@ -190,7 +200,7 @@ nav p{
 footer{
     width: 100%;
     height: 8vh;
-    background: #8b9996;
+    background: rgb(110, 140, 77);
     display: flex;
     align-items: center;
     justify-content: center;

@@ -60,7 +60,7 @@ nav p{
 
 .section-2{
     width: 60%;
-    height: 500px;
+    height: auto;
     margin: 50px auto 160px auto;
     text-align: center;
     justify-content: space-around; 
@@ -86,14 +86,40 @@ nav p{
 }
 .content{
     font-family: 'Noto Sans JP', serif;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1.8;
     text-align: left;
+}
+.section-2 img{
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+.news-button{
+    font-family: 'Carrois Gothic', sans-serif;  
+    border-bottom: 1px solid; 
+    font-weight: 600;
+    width: 10%;
+    margin: 50px auto;
+    padding-bottom: 0.5%;
+    text-align: center;
+    justify-content: space-around; 
+
+}
+
+.news-button:hover, .news-button a:hover{
+    color: #47763c;
+    cursor: pointer;
+}
+.news-button a{
+    text-decoration: none;
+    color: #212121;
 }
 footer{
     width: 100%;
     height: 8vh;
-    background: #8b9996;
+    background: rgb(110, 140, 77);
     display: flex;
     align-items: center;
     justify-content: center;
