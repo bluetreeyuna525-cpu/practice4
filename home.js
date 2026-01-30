@@ -29,67 +29,44 @@ const fadeElements = document.querySelectorAll('.fadein');
 // Hamburger menu functionality
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('nav-links');
+const links = document.querySelectorAll('#nav-links a');
 
 hamburger.addEventListener('click', () => {
     // 1. Toggle the slide-out menu
-    navLinks.classList.toggle('active');
+    navLinks.classList.toggle('nav-active');
 
-    // 2. Check if the menu is now open or closed
-    if (navLinks.classList.contains('active')) {
-        hamburger.innerHTML = '&times;'; // Change to "X"
+    if (navLinks.classList.contains('nav-active')) {
+        hamburger.textContent = '×'; // バツ印に変更
     } else {
-        hamburger.innerHTML = '&#9776;'; // Change back to Hamburger
+        hamburger.textContent = '☰'; // 三本線に戻す
     }
+
+});
+links.forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('nav-active'); // メニューを閉じる
+        hamburger.textContent = '☰'; // ボタンを三本線に戻す
+    });
 });
 
 // Animation for headings
-const heading1 = document.querySelector('#heading1');
+window.addEventListener('load', () => {
+    const heading1 = document.getElementById('heading1');
+    const heading2 = document.getElementById('heading2');
 
-const keyframesh1 = {
-    opacity: [0, 1],
-    translate: ['0px, 50px', 0 ],
+    // Heading1 をふわっと表示（0.5秒かけて）
+    if(heading1) {
+        heading1.style.transition = 'opacity 2s ease';
+        heading1.style.opacity = '1';
+    }
 
-};
-const optionsh1 = {
-    duration: 4000,
-    easing: 'ease',
-    fill: 'forwards',
-};
-heading1.animate(keyframesh1, optionsh1);
+    // Heading2 を少し遅れて表示（1.5秒後に開始）
+    if(heading2) {
+        // setTimeoutでタイミングをずらす
+        setTimeout(() => {
+            heading2.style.transition = 'opacity 2s ease';
+            heading2.style.opacity = '1';
+        }, 1000); // 1000ミリ秒 = 1秒後に実行
+    }
+});
 
-const heading2 = document.querySelector('#heading2');
-
-const keyframesh2 = {
-    opacity: [0, 1],
-    translate: ['0px, 50px', 0 ],
-
-};
-const optionsh2 = {
-    duration: 4000,
-    easing: 'ease',
-    delay: 500, // 1秒遅らせる
-    fill: 'forwards',
-};
-heading2.animate(keyframesh2, optionsh2);
-
-
-
-
-// const headingbg = document.querySelector('.bg');;
-
-// const frames = {
-//     opacity: [0, 1],
-//     translate: ['0px, 50px', 0 ],
-//     borderRadius: [
-//         '20% 50% 50% 70%/50% 50% 70% 50%',
-//         '50% 20% 50% 50%/40% 40% 60% 60%',
-//         '50% 40% 20% 40%/40% 50% 50% 80%',
-//         '50% 50% 50% 20%/40% 40% 60% 60%',],
-// };
-// const option = {
-//     duration: 5000,
-//     direction: 'alternate',
-//     iterations: Infinity,
-//     easing: 'ease',
-// };
-// headingbg.animate(frames, option);

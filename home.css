@@ -139,18 +139,7 @@ nav p{
 
 }
 
-/* .bg{
-    position: absolute;
-    right: 5%;
-    bottom: 1%;
-    border-radius: 50%;
-    border: rgb(79, 107, 85) 3px double;
-    width: 500px;
-    height: 220px;
-    display: inline-block;
-    z-index: 2;
-    opacity: 0.6;
-} */
+
 .content h1{
     opacity: 0;
     font-size: 50px;

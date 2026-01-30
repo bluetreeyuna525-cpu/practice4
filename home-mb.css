@@ -1,30 +1,9 @@
 @media (max-width: 430px){
-    /* ナビゲーション */
 
-    nav{
-        width: 100vw;
-        height: 10vh;
-        padding-right: 13px;
-    }
-    nav p{
-        font-size: 12px;
-        margin-left: 4%;
-        width: 10%;
-        flex: none;
-    }
 
-    .nav-links{
-        width: 100%;
-        flex: none;
-        text-align: center;
-    }
 
-    .nav-links li a{
-        font-size: 10px;
-        margin: 0.5em;
-    }
     .section-1{
-        height: 70vh;
+        height: 100vh;
     }
     .content{
         padding: 4% 4%;
@@ -53,13 +32,13 @@
     }
     .section-2{
         width: 100%;
-        height: 60vh;
+        height: 80vh;
         padding: 5vh 0;
     }
     .sec2content{
         height: auto;
     }
-    .sec2content br{
+    .sec2content h1 br{
         display: block;
     }
     .section-2 h1{
@@ -77,6 +56,7 @@
         font-size: 12px;
         padding: 8px 0;
         margin-top: 3%;
+        color: rgb(110, 140, 77);
     }
     .sec2img button:active{
     background: rgb(110, 140, 77);
@@ -127,34 +107,52 @@
 
 
 /* hamburger menu */
-    /* .humburger{
-        display: block;
-        margin-left: auto;
-        margin-right: 2%;
+    .humburger{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: fixed;
         right: 1rem;
         top: 1rem;
-        z-index: 4;
-        padding: .5rem 1rem;
-        border: 1px solid var(--brown);
-        border-radius: 50%;
-        height: 4rem;
-        width: 4rem;
+        z-index: 3000;
+        padding: .5rem;
+        border: none;
+        color: #636363;
+        border-radius: 5px; /* 丸ではなく四角くする場合（お好みで50%に） */
+        width: 3rem;
+        height: 3rem;
+        cursor: pointer;
         transition: .4s;
     }
     .nav-links{
         position: fixed;
         height: 100vh;
         width: 100%;
-        background: #fff;
+        background: #a0a0a0;
+        display: flex;
         flex-direction: column;
-        text-align: center;
+        justify-content: center;
+        align-items: center;
         margin: 0;
-        padding-top: 0rem;
+        padding: 0;
         top: 0;
         right: 0;
         transform: translateX(100%);
-        transition: transform .5s ease-in;
-        z-index: 3;
-    } */
+        transition: transform .5s ease-in-out;
+        z-index: 2000;
+    }
+    .nav-links li{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 2rem 0;
+    }
+    .nav-active{
+        transform: translateX(0);
+    }
+    .nav-links li a{
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0.5em;
+    }
 }

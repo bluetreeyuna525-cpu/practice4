@@ -4,7 +4,10 @@
     margin: 0;
     padding: 0;
 }
+.fadein{
+    opacity: 0;
 
+}
 main{
     color: #212121;
     font-size: 12px;
@@ -16,6 +19,7 @@ nav{
     display: flex;
     align-items: center;
     position: fixed;
+    z-index: 1000;
 }
 nav p{
     font-family: 'Inria Sans', serif;
@@ -23,6 +27,12 @@ nav p{
     font-weight: 800;
     flex: 3;
     margin-left: 4%;
+}
+.humburger{
+    display: none;
+    font-size: 2rem;
+    color: #212121;
+    z-index: 2000;
 }
 .nav-links{
     list-style: none;
