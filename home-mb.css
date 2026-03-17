@@ -1,6 +1,19 @@
 @media (max-width: 430px){
 
-
+    header .mobile{
+        font-family: 'Inria Sans', serif;
+        font-weight: 800;
+        display: block;
+        position: absolute;
+        font-size: 20px;
+        top: 1rem;
+        left: 1rem;
+        color: #636363;
+        z-index: 3001;
+    }
+    nav .desktop{
+        display: none;
+    }
 
     .section-1{
         height: 100vh;
@@ -32,7 +45,7 @@
     }
     .section-2{
         width: 100%;
-        height: 80vh;
+        height: auto;
         padding: 5vh 0;
     }
     .sec2content{
@@ -45,10 +58,10 @@
         font-size: 30px;
     }
     .section-2 p{
-        font-size: 14px;
+        font-size: 13px;
     }
     .sec2img{
-        width: 90%;
+        width: 95%;
         height: auto;
     }
     .sec2img button{
@@ -129,6 +142,7 @@
         height: 100vh;
         width: 100%;
         background: #a0a0a0;
+        opacity: 0.95;
         display: flex;
         flex-direction: column;
         justify-content: center;

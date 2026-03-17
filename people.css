@@ -21,11 +21,15 @@ nav{
     position: fixed;
     z-index: 1000;
 }
-nav p{
+header .mobile{
+    display: none;
+
+}
+nav .desktop{
     font-family: 'Inria Sans', serif;
     font-size: 24px;
     font-weight: 800;
-    flex: 3;
+    flex: 1;
     margin-left: 4%;
 }
 .humburger{
@@ -36,7 +40,7 @@ nav p{
 }
 .nav-links{
     list-style: none;
-    flex: 7;
+    flex: 4;
     text-align: right;
     margin-right: 2%;
 }
@@ -60,7 +64,7 @@ nav p{
 
 .section-1{
     width: 100%;
-    height: 60vh;
+    height: 380px;
 }
 .section-1 div{
     position: absolute;
@@ -71,17 +75,20 @@ nav p{
 
 /* Ｓｔａｆｆ */
 .staff, .member{
-    width: 70%;
-    height: 500px;
-    margin: 100px auto ;
+    width: 80%;
+    height: auto;
+    margin: 5px auto 100px auto;
     font-family: 'Inria Sans', sans-serif;
 }
+.member{
+    margin-top: 100px;
+}
 .staff-wrapper{
-    width: 93%;
-    height: 450px;
+    width: 95%;
+    height: auto;
     margin: 30px auto ;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 /* 左側 */
 .staff-left{
@@ -91,8 +98,8 @@ nav p{
 }
 
 .staff-img{
-    width: 100%;
-    height: 80%;
+    width: 320px;
+    height: 360px;
 }
 .staff-img img{
     width: 100%;
@@ -138,7 +145,7 @@ nav p{
     display: flex;
     align-items: baseline;
     justify-content: left;
-    width: 80%;
+    width: 350px;
     letter-spacing: 3px;
 }
 .staff-name h3{
@@ -151,7 +158,7 @@ nav p{
     margin-top: 3%;
 }
 .staff-content{
-    height: 70%;
+    height: auto;
     margin-top: 5%;
 }
 .staff-content2{
@@ -165,6 +172,7 @@ nav p{
 .staff-link{
     display: flex;
     justify-content: left;
+    margin-top: 5%;
     
 }
 .staff-link button{

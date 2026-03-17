@@ -18,11 +18,15 @@ nav{
     position: fixed;
     z-index: 1000;
 }
-nav p{
+header .mobile{
+    display: none;
+
+}
+nav .desktop{
     font-family: 'Inria Sans', serif;
     font-size: 24px;
     font-weight: 800;
-    flex: 3;
+    flex: 1;
     margin-left: 4%;
 }
 .humburger{
@@ -33,7 +37,7 @@ nav p{
 }
 .nav-links{
     list-style: none;
-    flex: 7;
+    flex: 4;
     text-align: right;
     margin-right: 2%;
 }
@@ -56,7 +60,7 @@ nav p{
 }
 .section-1{
     width: 100%;
-    height: 60vh;
+    height: 380px;
 }
 .section-1 div{
     position: absolute;
@@ -135,6 +139,20 @@ footer{
     font-size: 11px;
 }
 @media (max-width: 430px){
+
+    header .mobile{
+        font-family: 'Inria Sans', serif;
+        font-weight: 800;
+        display: block;
+        position: absolute;
+        font-size: 20px;
+        top: 1rem;
+        left: 1rem;
+        color: #636363;
+    }
+    nav .desktop{
+        display: none;
+    }    
    /* hamburger menu */
     .humburger{
         display: flex;
@@ -158,6 +176,7 @@ footer{
         height: 100vh;
         width: 100%;
         background: #a0a0a0;
+        opacity: 0.95;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -193,6 +212,7 @@ footer{
         top: 15%;
         left: 10%;
         font-family: 'Noto Sans JP', sans-serif;
+        font-size: 16px;
     }
     .section-2{
         width: 90%;

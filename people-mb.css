@@ -1,6 +1,21 @@
 @media (max-width: 430px){
     /* ナビゲーション */
 
+    header .mobile{
+        font-family: 'Inria Sans', serif;
+        font-weight: 800;
+        display: block;
+        position: absolute;
+        font-size: 20px;
+        top: 1rem;
+        left: 1rem;
+        color: #636363;
+        z-index: 3001;
+    }
+    nav .desktop{
+        display: none;
+    }
+    
 /* hamburger menu */
     .humburger{
         display: flex;
@@ -24,6 +39,7 @@
         height: 100vh;
         width: 100%;
         background: #a0a0a0;
+        opacity: 0.95;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -59,6 +75,7 @@
         top: 15%;
         left: 10%;
         font-family: 'Noto Sans JP', sans-serif;
+        font-size: 16px;
     }
 
     .staff, .member{
